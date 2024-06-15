@@ -21,7 +21,7 @@ function displayTodos(project) {
   todosDiv.innerHTML = '';
   project.getTodos().forEach((todo, index) => {
   const todoElement = document.createElement('div');
-  todoElement.textContent = ${todo.title} - ${todo.dueDate};
+  todoElement.textContent = `${todo.title} - ${todo.dueDate}`;
   todoElement.addEventListener('click', () => {
   // Code to expand and edit the todo details
   });
