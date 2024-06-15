@@ -10,8 +10,10 @@ displayTodos(currentProject);
 // Event listeners for adding projects and todos
 document.getElementById('addProjectButton').addEventListener('click', () => {
   const projectName = prompt('Enter project name:');
-  const project = createProject(projectName);
-  displayProjects();
+  if (projectName) {
+    const project = createProject(projectName);
+    displayProjects();
+  }
 });
 
 document.getElementById('addTodoButton').addEventListener('click', () => {
@@ -23,3 +25,12 @@ document.getElementById('addTodoButton').addEventListener('click', () => {
   addTodoToProject(currentProject, todo);
   displayTodos(currentProject);
 });
+
+// Load saved projects on initialization
+window.onload = () => {
+  if (projects.length === 0) {
+  createProject('Default');
+  }
+  displayProjects();
+  displayTodos(currentProject);
+};
