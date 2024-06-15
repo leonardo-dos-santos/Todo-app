@@ -1,0 +1,47 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Styles for the project list */
+#projects {
+  margin-bottom: 20px;
+}
+
+#projects .project {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#projects .project:hover {
+  background-color: #e0e0e0;
+}
+
+/* To-do list styles */
+#todos {
+  list-style: none;
+  padding: 0;
+}
+
+.todo {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.todo:hover {
+  background-color: #e0e0e0;
+}
