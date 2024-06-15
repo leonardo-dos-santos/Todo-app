@@ -1,6 +1,5 @@
 import { createProject, addTodoToProject, removeTodoFromProject, projects, currentProjects } from './appLogic'
 import Todo from './todo';
-import { projects, currentProject } from './appLogic';
 
 function displayProjects() {
   // Code to display projects in the UI
